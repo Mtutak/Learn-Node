@@ -1,3 +1,4 @@
+//import mongoose
 const mongoose = require('mongoose');
 
 // Make sure we are running node 7.6+
@@ -7,7 +8,7 @@ if (major < 7 || (major === 7 && minor <= 5)) {
   process.exit();
 }
 
-// import environmental variables from our variables.env file
+// import environmental variables from our variables.env file...should't go into github
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle any bad connections
